@@ -1,7 +1,7 @@
 steps:
   # Build the container image
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/$PROJECT_ID/my-app-production", "."]
+    args: ["build", "-t", "gcr.io/faisal-project-380209/app-production", "."]
   # Push the container image to Container Registry
   - name: "gcr.io/cloud-builders/docker"
-    args: ["push", "gcr.io/$PROJECT_ID/my-app-production"]
+    args: ["push", "gcr.io/faisal-project-380209/app-production"]
